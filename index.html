@@ -1,22 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Wikipedia clone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: azure;
+        font-size: 18px;
+        font-family: calibri;
+      }
+      .container {
+        height: 300px;
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 100px;
+        border: 1px solid black;
+        box-shadow: 10px 10px grey;
+      }
+      form {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        margin-left: 60px;
+      }
+      label,
+      input {
+        margin-top: 10px;
+      }
+      .btn {
+        width: 80px;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <span>Wikipedia</span><br><span><b>The free Encyclopedia</b></span> <input type=" search" ><input type="button" value=" search" >
-    </header><br>
-      <aside> Contents
-        <ul>
-          <li><a href=#>History</a></li>
-          <li><a href=#>Politics</a></li>
-          <li><a href=#>Goverment and Policies</a></li>
-          <li><a href=#>Geography</a></li>
-        </ul>
-          </aside>
-      <main>
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/250px-Flag_of_India.svg.png"  height=" 100" width=" 100" align="right">
-    India, officially the Republic of India,[20] is a country in South Asia. It is the seventh-largest country by area; the most populous country since 2023;[21] and, since its independence in 1947, the world's most populous democracy Bounded by the <i>Indian Ocean</i> on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with <b>Pakistan to the west China, Nepal, and Bhutan</b> to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is near Sri Lanka and the Maldives; its <a href=#>Andaman and Nicobar Islands</a> share a maritime border with Thailand, Myanmar, and Indonesia.
-      </main> 
+    <div class="container">
+      <center style="margin-top: 10px; font-size: 20px">Login Form</center>
+      <form action="#" method="get">
+        <label for="">Username</label>
+        <input type="text" name="usernmae" /><br />
+        <label for="">Password</label>
+        <input type="password" name="pass" /><br />
+        <input class="btn" type="submit" value="Login" /><br />
+        <a href="#">Forgot Password</a>
+      </form>
+    </div>
   </body>
 </html>
